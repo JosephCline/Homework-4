@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="keywords" content="insert, keywords, here">
+     <meta name="description" content="Insert description here">
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <title>Insert Title here</title>
+</head>
+
+<body>
+
+<?php
+$text = "Your age is";
+$age = 22; 
+if ($age >= 21)
+{
+	echo "<p>You are over or of the age of 21</p>";
+	echo $text;
+	echo $age;
+}
+elseif ($age >= 18) 
+{
+	echo "<p>You are not over the age of 21</p>";
+	echo "<p>You are over or of the age of 18</p>";
+}
+elseif ($age < 18) 
+	echo "<p>You are a minor who is under the age of 18</p>"
+?>
+
+</body>
+</html>
