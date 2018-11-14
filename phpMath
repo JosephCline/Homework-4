@@ -1,0 +1,15 @@
+<?php 
+$x = 0;
+
+while($x <= 4) {
+    $num1 = rand(1, 9);
+    $num2 = rand(1, 9);
+    $operator = array('+', '-');
+    $random = $operator[rand(0, 1)];
+    $answer = $num1 + $num2;
+    $x++;
+    $text1 = $num1 . $random . $num2 . '=' . $answer;
+    echo $text1;
+    echo "<br>";
+} 
+?>
