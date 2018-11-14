@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="keywords" content="insert, keywords, here">
+     <meta name="description" content="Insert description here">
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <title>Example 2 using PHP</title>
+</head>
+
+<body>
+
+<?php
+
+$text = " This program randomly generates a number between -10 through 120, after the number is generated, its converts the number from Fahrenheit into Celsius. The number is: ";
+$random = rand(-10,120);
+$cel = ($random - 32) * (5/9);
+echo $text;
+echo(round($cel));
+
+?>
+
+</body>
+</html>
