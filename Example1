@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="keywords" content="insert, keywords, here">
+     <meta name="description" content="Insert description here">
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <title>Example 1 using php</title>
+</head>
+<body>
+
+<?php
+
+echo "<p>'Hello John'</p>";
+echo "<p>Hello \'John\'</p>";
+echo "<p>Hello 'John'</p>";
+echo "Today is " . date("Y-m-d") . "<br>";
+
+
+?>
+
+</body>
+</html>
