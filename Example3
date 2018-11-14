@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="keywords" content="insert, keywords, here">
+     <meta name="description" content="Insert description here">
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <title>Example 3 using php</title>
+</head>
+
+<body>
+
+<?php
+
+$money = "$";
+$text = "Your grosspay is: ";
+$gross = 5000;
+if ($gross >= 20000)
+{
+	echo "<p>You are making over $20,000 per year</p>";
+	echo $text;
+	echo $money;
+	echo $gross;
+}
+	
+if ($gross <= 20000)
+{
+	echo "<p>You are making less than $20,000 per year</p>";
+	echo $text;
+	echo $money;
+	echo $gross;
+}
+?>
+
+</body>
+</html>
