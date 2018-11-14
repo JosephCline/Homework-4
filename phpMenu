@@ -1,0 +1,126 @@
+<!-- https://cislinux.hfcc.edu/~jdcline/cis122/project/phpexamples.php -->
+
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>Web Development Process</title>
+<meta name="description" content="Web Development">
+<meta name="keywords" content="HTML, CSS, Javascript, Web, Web Development">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<link rel="shortcut icon" href="images/favicon.ico"  type="image/x-icon">
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="js/flexslider/flexslider.css">
+<link rel="stylesheet" href="css/basic-style.css">
+<link href="prism/prism.css" rel="stylesheet">
+
+
+<script src="js/libs/modernizr-2.6.2.min.js"></script>
+<script type="text/javascript" src="js/mypiechart.js"></script>
+<script type="text/javascript" src="js/canvasjs.min.js"></script>
+<script src="prism/prism.js"></script>
+
+</head>
+<body id="home">
+    <header class="wrapper clearfix">		       
+        <div id="banner">        
+        	<div id="logo"><a href="webdevprocess.html"><img src="images/logo.jpg" alt="logo"></a></div> 
+        </div>       				
+    </header>
+<p>Example #0: Simple PHP Output with Hyperlink</p>
+<pre><code class="language-php">
+&lt;?php
+echo "<p>Welcome</p>";
+echo "<p>This is an example</p>";
+echo "<p><a href=\"http://www.hfcc.edu/\">Henry Ford College</a></p>";
+echo '<p><a href="http://www.hfcc.edu/">Henry Ford College</a></p>';
+?>
+</code></pre>
+<p><a href="ex0.php">Run it now</a></p>
+
+<p>Example #1: Simple PHP Echo/Date Function</p>
+<pre><code class="language-php">
+&lt;?php
+echo "<p>'Hello John'</p>";
+echo "<p>Hello \'John\'</p>";
+echo "<p>Hello 'John'</p>";
+echo "Today is " . date("Y-m-d") . "<br>";
+?>
+</code></pre>
+<p><a href="ex0.php">Run it now</a></p>
+
+<p>Example #2: Simple PHP Echo/Random/Round Fuction</p>
+<pre><code class="language-php">
+&lt;?php
+$text = " This program randomly generates a number between -10 through 120, after the number is generated, its converts the number from Fahrenheit into Celsius. The number is: ";
+$random = rand(-10,120);
+$cel = ($random - 32) * (5/9);
+echo $text;
+echo(round($cel));
+?>
+</code></pre>
+<p><a href="ex0.php">Run it now</a></p>
+
+<p>Example #3: Simple PHP Echo/If/Variable Statement</p>
+<pre><code class="language-php">
+&lt;?php
+
+$money = "$";
+$text = "Your grosspay is: ";
+$gross = 5000;
+if ($gross >= 20000)
+{
+	echo "<p>You are making over $20,000 per year</p>";
+	echo $text;
+	echo $money;
+	echo $gross;
+}
+	
+if ($gross <= 20000)
+{
+	echo "<p>You are making less than $20,000 per year</p>";
+	echo $text;
+	echo $money;
+	echo $gross;
+}
+?>
+</code></pre>
+<p><a href="ex0.php">Run it now</a></p>
+
+<p>Example #4: Simple PHP Echo/If/Elseif Statement</p>
+<pre><code class="language-php">
+&lt;?php
+$text = "Your age is";
+$age = 22; 
+if ($age >= 21)
+{
+	echo "<p>You are over or of the age of 21</p>";
+	echo $text;
+	echo $age;
+}
+elseif ($age >= 18) 
+{
+	echo "<p>You are not over the age of 21</p>";
+	echo "<p>You are over or of the age of 18</p>";
+}
+elseif ($age < 18) 
+	echo "<p>You are a minor who is under the age of 18</p>"
+?>
+</code></pre>
+<p><a href="ex0.php">Run it now</a></p>
+<div id="main" class="wrapper">    
+	<section id="content" class="wide-content">  
+    <footer>
+        <sub id="sub">CIS 122 Web Internet Technologies </sub>
+        <br />
+        <sub id="sub3">Copyright &copy; 2018 Joe Cline </sub>
+    </footer> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.0.min.js">\x3C/script>')</script>
+<script defer src="js/flexslider/jquery.flexslider-min.js"></script>  
+<script src="js/main.js"></script>
+</body>
+</html>
